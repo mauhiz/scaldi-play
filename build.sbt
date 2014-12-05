@@ -6,15 +6,15 @@ organization := "org.scaldi"
 
 version := "0.4.2-SNAPSHOT"
 
-scalaVersion := "2.11.1"
+scalaVersion := "2.11.4"
 
-scalacOptions += "-deprecation"
+scalacOptions ++= Seq("-deprecation", "-Xlint", "-feature")
 
 libraryDependencies ++= Seq(
-  "com.typesafe.play" %% "play" % "2.3.0" % "provided",
+  "com.typesafe.play" %% "play" % "2.3.7" % "provided",
   "org.scaldi" %% "scaldi" % "0.4",
-  "org.scalatest" %% "scalatest" % "2.1.3" % "test",
-  "com.typesafe.play" %% "play-test" % "2.3.0" % "test"
+  "org.scalatest" %% "scalatest" % "2.2.2" % "test",
+  "com.typesafe.play" %% "play-test" % "2.3.7" % "test"
 )
 
 // nice prompt!
